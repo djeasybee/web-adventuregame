@@ -73,13 +73,14 @@
 .Zombie_Chasing_Text h3 {
     
     padding-top: 20px;
+    justify-items: center;
     align-items: center;
     text-align: center;
     overflow: hidden;
     white-space: nowrap;
-    font-size: 20px; 
-    color: rgba(163, 123, 13, 0.753);
-    font-weight: 1000;   
+    font-size: 25px;
+    font-weight: 1000;
+    color: rgba(163, 123, 13, 0.753); 
 }
 
 h4 {

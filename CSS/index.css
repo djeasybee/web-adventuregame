@@ -152,4 +152,11 @@
     .homePage p {
         font-size: 30px;
     }
+    .container {
+        max-width: 50px;
+        height:10px;
+        position: fixed;
+        bottom:50px;
+        left: 0;
+    }
 }
