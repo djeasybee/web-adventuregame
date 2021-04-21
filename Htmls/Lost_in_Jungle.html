@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Master2.css">
+    <link rel="stylesheet" href="../CSS/Lost_in_jungle.css">
+    <title>LostInTheJungle</title>
+</head>
+
+<body>
+    <section id="banner">
+
+        <div class="title_text">
+            <H2>You are Lost in the Zombie Jungle</H2>
+        </div>
+
+        <div class="Zombie_Chasing_Text">
+            <h3>Oh No!!!, The Zombies are aware of your presence and they are coming towards you!</h3>
+        </div>
+
+        <h4>What Are You Going To Do?</h4>
+
+        <div class="choice1-button">
+            <div class="box">
+                <a href="../Htmls/Zombie_Chase.html"><span></span>Run..</a>
+
+                <audio id="Enterbtn-sound" preload="auto" loop>
+                    <source src="./Sounds/Spooky Heart Beats.mp3">
+                    Your browser does not support this sound effects
+                </audio>
+
+
+            </div>
+
+            <div class="box">
+                <a href="../Htmls/TheWaitingGame.html"><span></span>Hide..</a>
+            </div>
+
+            <div class="GetMeOut-button">
+                <a href="../Htmls/LandingPage.html"><span></span>Stop Playing & Scream Get Me Outta Here</a>
+            </div>
+
+
+            <div class="container">
+                <audio id="Enterbtn-sound" preload="auto" loop controls>
+                    <source src="../Sounds/creepy-background-daniel_simon.mp3">
+                    Your browser does not support this sound effects
+                </audio>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+        var scarysound = $("#Enterbtn-sound")[0];
+        $(".choice1-button a").mouseenter(function () {
+            scarysound.play();
+        });
+
+        $(".choice1-button a").mouseout(function () {
+            scarysound.pause();
+        });
+
+        var vid = document.getElementById("Enterbtn-sound");
+        vid.volume = 0.2;
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Reggae One', cursive;
+    box-sizing: border-box;
+}
+
+
+.The_End_Text h3{
+    justify-items: center;
+    align-items: center;
+    margin-left: 680px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: chase 5s steps(60);
+    border-right: 0;
+    font-size: 20px;
+    color:rgba(163, 123, 13, 0.753);
+
+             
+}
+
+@keyframes chase{
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width:60ch;
+    }
+}
+.container {
+   
+    margin: 0 auto;
+
+   
+}
+
+
+.svg {
+    width: 1000px;
+    height: 900px;
+    position: absolute;
+    top: 10px;
+    margin-left: 500px;
+    align-items: center;
+    pointer-events: none;
+    
+}
+
+
+
+
+
+
+
