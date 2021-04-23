@@ -9,45 +9,41 @@
 }
 
 #banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(../Images/Jungle-yoal-desurmont.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 1), #0000), url(../Images/Lading-Jungle-1yoal-desurmont.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .choice1-button {
     position: relative;
-    width: 1000px;
-    height: 300px;
-    margin: auto;
+    margin: 20px 500px;
     font-size: 50px;
-    left: 120px;
-    padding: auto;
+    align-items: center;
 }
 
 .choice1-button .box {
-    align-items: center;
     position: relative;
     width: calc(400px - 30px);
     height: calc(300px - 30px);
     background: transparent;
     float: left;
-    margin: 5px;
+    margin: 10px 10px;
     box-sizing: border-box;
     overflow: hidden;
     border: 2px solid rgba(233, 172, 17, 0.664);
 }
 
 .choice1-button .box a {
-    margin: 30px 50px;
     font-family: 'Reggae One', cursive;
     text-decoration: none;
-    height: 0;
+    text-align: center;
+    margin: 20px 20px;
     color: #fff;
     font-size: 30px;
     position: relative;
     z-index: 1;
-    display: inline-block;
 }
 
 .title_text h2 {
@@ -71,25 +67,19 @@
 }
 
 .Zombie_Chasing_Text h3 {
-    
     padding-top: 20px;
-    justify-items: center;
-    align-items: center;
+    font-size: 1.5vw;
     text-align: center;
-    overflow: hidden;
-    white-space: nowrap;
-    font-size: 25px;
-    font-weight: 1000;
-    color: rgba(163, 123, 13, 0.753); 
+    color: rgba(163, 123, 13, 0.753);
 }
 
 h4 {
     margin: 50px;
     overflow: hidden;
     white-space: nowrap;
-    font-size: 50px;
+    font-size: 3vw;
     color: white;
-    padding-left: 550px;
+    text-align: center;
     font-family: 'Reggae One', cursive;
 }
 
@@ -155,18 +145,14 @@ h4 {
 }
 
 .GetMeOut-button {
+    position: relative;
     text-align: center;
-    margin: 40px 20px;
-    position: absolute;
+    align-items: center;
 }
 
 .GetMeOut-button a {
     font-family: 'Reggae One', cursive;
-    top: 300px;
-    bottom: 8px;
-    left: 900px;
-    font-size: 16px;
-    position: relative;
+    font-size: 20px;
     text-decoration: none;
     display: inline-block;
     padding: 12px 10px;
@@ -179,7 +165,7 @@ h4 {
 .GetMeOut-button a span {
     width: 0px;
     height: 100%;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     background: red;
@@ -188,39 +174,44 @@ h4 {
     transition: 0.3s;
 }
 
-.GetMeOut-button a:hover span {
-    width: 100%;
-}
-
-.GetMeOut-button a:hover {
-    color: black;
-}
 
 @media screen and (max-width: 770px) {
     .choice1-button .box {
-        font-size: 20px;
         width: calc(150px - 15px);
         height: calc(150px - 15px);
+    }
+    .choice1-button {
+        position: relative;
+        align-items: center;
         background: transparent;
-        border: 2px solid rgba(233, 172, 17, 0.664);
+        margin: 40px 80px;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
     }
     .choice1-button .box a {
         text-decoration: none;
-        display: inline-block;
-        margin-top: px auto;
+        display: flex;
         color: #fff;
-        font-size: 20px;
         font-family: 'Syne Mono';
+        text-align: center;
+        font-size: 25px;
     }
     .title_text h2 {
-        font-size: 25px;
-        text-align: center;
-        padding-top: 200px;
-        color: rgba(163, 123, 13, 0.753);
+        font-size: 40px;
     }
-    .scrol_text h3 {
-        text-align: center;
-        font-size: 15px;
-        color: rgba(163, 123, 13, 0.753);
+    .Zombie_Chasing_Text h3 {
+        font-size: 20px;
+    }
+    
+    
+    .music-container {
+        max-width: 100px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+     h4{
+        font-size: 30px;
     }
 }

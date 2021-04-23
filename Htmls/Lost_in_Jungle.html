@@ -22,45 +22,44 @@
 
         <h4>What Are You Going To Do?</h4>
 
+
+
         <div class="choice1-button">
             <div class="box">
                 <a href="../Htmls/Zombie_Chase.html"><span></span>Run..</a>
-               
+
             </div>
 
             <div class="box">
                 <a href="../Htmls/TheWaitingGame.html"><span></span>Hide..</a>
             </div>
 
-            <div class="GetMeOut-button">
-                <a href="../index.html"><span></span>Stop Playing & Scream Get Me Outta Here</a>
-            </div>
+        </div>
 
 
-            <div class="container">
-                <audio id="Enterbtn-sound" preload="auto" loop controls>
-                    <source src="../Sounds/creepy-background-daniel_simon.mp3">
-                    Your browser does not support this sound effects
-                </audio>
-            </div>
-
+        <div class="music-container">
+            <audio id="Enterbtn-sound" preload="auto" loop controls>
+                <source src="../Sounds/creepy-background-daniel_simon.mp3">
+                Your browser does not support this sound effects
+            </audio>
         </div>
 
     </section>
 
     <script>
-        var scarysound = $("#Enterbtn-sound")[0];
-        $(".choice1-button a").mouseenter(function () {
-            scarysound.play();
-        });
 
-        $(".choice1-button a").mouseout(function () {
-            scarysound.pause();
-        });
 
-        var vid = document.getElementById("Enterbtn-sound");
-        vid.volume = 0.2;
+        var vol = document.getElementById("Enterbtn-sound");
 
+        function getVolume() {
+            alert(vol.volume);
+        }
+        function setHalfVolume() {
+            vol.volume = 0.2;
+        }
+        function setFullVolume() {
+            vol.volume = 1.0;
+        }
 
     </script>
 

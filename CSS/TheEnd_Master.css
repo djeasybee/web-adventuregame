@@ -11,6 +11,8 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
+
+    
 }
 
 .title_text h2 {
@@ -43,6 +45,15 @@ h4 {
     font-size: 50px;
     color: white;
     padding-left: 550px;
+}
+
+.The_End_Text h3 {
+
+    font-size: 2vw;
+    text-align: center;
+    color: rgba(163, 123, 13, 0.753); 
+    
+    
 }
 
 .homePage-button {
@@ -128,5 +139,27 @@ h4 {
     }
     100% {
         transform: translate(1px, -2px) rotate(-3deg);
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .title_text h2{
+        font-size: 40px;
+        padding-top: 200px;
+       
+        color: white;
+        font-family: 'Reggae One', cursive;
+        padding-bottom: 20px;
+    }
+
+    @media screen and (max-width: 770px) {
+        .The_End_Text  h3{
+            
+         text-align: center;
+            font-size: 20px;
+            color: rgba(163, 123, 13, 0.753);
+            padding: 20px;
+    
+        }
     }
 }
